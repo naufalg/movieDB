@@ -41,6 +41,9 @@ export default function LandingPage() {
     if (!movies && !isLoaded) {
       dispatch(getMovie());
     }
+  }, [dispatch, isLoaded, movies]);
+
+  useEffect(() => {
     if (searched) {
       setSearchInput(searched);
     }
@@ -55,6 +58,7 @@ export default function LandingPage() {
     setSearchInput(e.target.value);
   };
 
+  // infinite scroll feature
   const isBottom = (el) => {
     return el?.getBoundingClientRect().bottom <= window.innerHeight;
   };
@@ -104,7 +108,7 @@ export default function LandingPage() {
       >
         <div style={{ marginTop: '20px' }}>
           <Row justify='center'>
-            <Col sm={24} lg={12} style={{ padding: '20px 0' }}>
+            <Col sm={24} lg={12} style={{ padding: '20px 0 30px' }}>
               {/* <AutoComplete
                 dropdownMatchSelectWidth={252}
                 style={{ width: 300 }}
@@ -112,13 +116,13 @@ export default function LandingPage() {
                 onSelect={onSelect}
                 onSearch={handleAutoComplete}
               > */}
-                <Search
-                  placeholder='Find'
-                  value={searchInput}
-                  onChange={onChange}
-                  onSearch={onSearch}
-                  enterButton
-                />
+              <Search
+                placeholder='Find'
+                value={searchInput}
+                onChange={onChange}
+                onSearch={onSearch}
+                enterButton
+              />
               {/* </AutoComplete> */}
             </Col>
           </Row>

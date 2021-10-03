@@ -1,17 +1,20 @@
-import React from 'react';
-import { Card, Image, Skeleton, Typography } from 'antd';
+import React, { useContext } from 'react';
+import { Card, Image, Typography } from 'antd';
 import placeholder from 'assets/images/placeholder-vertical.jpg';
+import { AppContext } from 'context/AppContext';
 
 const { Meta } = Card;
 const { Paragraph } = Typography;
 
 export default function CardComponent({ title, img, year, onClick }) {
+  const { isMobile } = useContext(AppContext);
+
   if (!title && !img) {
     return '';
   }
   return (
     <Card
-      style={{ width: '100%' }}
+      style={{ width: '100%', maxWidth: isMobile ? '245px' : '100%' }}
       hoverable
       cover={
         <Image
