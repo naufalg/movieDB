@@ -122,6 +122,7 @@ export default function LandingPage() {
                 onChange={onChange}
                 onSearch={onSearch}
                 enterButton
+                size='large'
               />
               {/* </AutoComplete> */}
             </Col>
