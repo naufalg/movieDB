@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Menu } from 'antd';
+import { Layout } from 'antd';
 import { ArrowLeftOutlined, DatabaseFilled } from '@ant-design/icons';
 import { useHistory } from 'react-router';
 

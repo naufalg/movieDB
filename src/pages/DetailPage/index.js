@@ -11,10 +11,11 @@ import {
   Skeleton,
   Typography,
   Breadcrumb,
+  BackTop,
 } from 'antd';
 import placeholder from 'assets/images/placeholder-vertical.jpg';
 
-const { Text, Link, Title } = Typography;
+const { Text, Title } = Typography;
 
 const { Content, Footer } = Layout;
 
@@ -26,7 +27,7 @@ export default function DetailPage() {
 
   useEffect(() => {
     dispatch(getMovieById(id));
-  }, [id]);
+  }, [id, dispatch]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -97,6 +98,10 @@ export default function DetailPage() {
           </Col>
         </Row>
       </Content>
+      <BackTop />
+      <Footer style={{ textAlign: 'center' }}>
+        MovieDB ©{new Date().getFullYear()} Created by Naufal Ghifari
+      </Footer>
     </Layout>
   );
 }
