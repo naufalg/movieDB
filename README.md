@@ -1,5 +1,4 @@
 <div id="top"></div>
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <br />
 <div align="center">
@@ -32,7 +31,7 @@
 
 ## About The Project
 
-[![screenshot-2][screenshot-2]]
+[screenshot-1][screenshot-1]
 
 Movie Database Web Application with some features including but not limited to:
 
@@ -94,24 +93,22 @@ This is an example of how to list things you need to use the software and how to
 ## Usage
 
 - Search Movie
-  [![screenshot-2][screenshot-2]]
+  [screenshot-2][screenshot-2]
 
 Type the movie you want to find and click search
 
 - Movie Detail Information
-  [![screenshot-3][screenshot-3]]
+  [screenshot-3][screenshot-3]
 
 Click on the movie poster to enlarge and preview the poster image, or click the movie title in the movie card you just searched and you will be redirected to the movie detail page for further information about the movie.
 
 - Responsive layout website
-  [![screenshot-4][screenshot-4]]
+  [screenshot-4][screenshot-4]
 
 Access from your beloved device wether it is your PC, Tablet, Smartphone, you name it.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/naufalg/
 [screenshot-1]: images/screenshot-1.jpg
 [screenshot-2]: images/screenshot-2.jpg
 [screenshot-3]: images/screenshot-3.jpg
