@@ -92,6 +92,14 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
+1. Open root project directory using Visual Studio Code
+2. Start the project
+   ```env
+   REACT_APP_URL_API=ENTER YOUR API
+   ```
+3. Use the app
+
+Features:
 - Search Movie
   [![2][screenshot-2]]
 
