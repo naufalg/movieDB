@@ -2,7 +2,7 @@
 
 <br />
 <div align="center">
-  <h3 align="center">Movie Database Web Ap</h3>
+  <h3 align="center">Movie Database Web Application</h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
